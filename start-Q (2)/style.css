@@ -14,29 +14,204 @@ a:hover {
   width: 100%;
 }
 
-#welcome .textbox h2 {
-  color: #ffffff;
-  font-weight: 500px;
-  font-size: 45px;
-}
-
 header {
-  padding: 40px 0 700px 0;
+  padding: 15px 0 400px 0;
   background-image: url("Assets/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
-header .imgbox img {
-  height: 50px;
-  width: 190px;
+
+@media screen and (min-width: 992px) {
+  header .navbar .imgbox img {
+    height: 32px;
+    width: 180px;
+  }
+  header .navbar nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .navbar nav ul li {
+    margin-right: 10px;
+  }
+  header .navbar nav ul li a {
+    font-size: 18px;
+    color: #ffffff;
+    margin-right: 30px;
+  }
+  header .navbar nav ul li a:hover {
+    color: #ffc800;
+  }
+  header .navbar .menubox {
+    position: absolute;
+  }
+  header .navbar .menubox h6, header .navbar .menubox i {
+    display: none;
+  }
+  header .headertext {
+    display: inline;
+  }
+  header .headertext h1 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 72px;
+    margin-bottom: 64px;
+    letter-spacing: 8px;
+  }
+  header .headertext h2 {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+  header .btn {
+    margin-top: 30px;
+  }
+  header .btn a {
+    border: 1px solid #ffc800;
+    border-radius: 5px;
+    color: #ffffff;
+    background: #ffc800;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 20px 50px;
+  }
+  header .btn a:hover {
+    background-color: #d9aa00;
+  }
+  header .headtext {
+    position: relative;
+    top: 200px;
+  }
 }
-header nav a {
-  display: inline-block;
-  font-size: 18px;
-  color: #ffffff;
-  margin-right: 40px;
+@media screen and (max-width: 991px) {
+  header {
+    padding: 200px 0 300px 0;
+    background-image: url("Assets/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  header .navbar {
+    background: #212529;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    padding: 10px 70px;
+  }
+  header .navbar .imgbox img {
+    height: 32px;
+    width: 180px;
+  }
+  header .navbar nav ul li a {
+    display: none;
+  }
+  header .navbar .menubox {
+    position: static;
+    border: 1px solid #383b3f;
+    border-radius: 5px;
+    height: 40px;
+    width: 85px;
+  }
+  header .navbar .menubox h6, header .navbar .menubox i {
+    display: flex;
+  }
+  header .navbar .menubox h6 {
+    color: #979397;
+    font-weight: 700;
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  header .navbar .menubox i {
+    font-size: 12px;
+    color: #979397;
+  }
+  header .headertext h1 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 72px;
+    margin-bottom: 64px;
+    letter-spacing: 8px;
+  }
+  header .headertext h2 {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 32px;
+  }
+  header .btn {
+    margin-top: 20px;
+  }
+  header .btn a {
+    border: 1px solid #ffc800;
+    border-radius: 5px;
+    color: #ffffff;
+    background: #ffc800;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    padding: 20px 40px;
+  }
+  header .btn a:hover {
+    background-color: #d9aa00;
+  }
+  header .headtext {
+    position: relative;
+    top: 80px;
+  }
 }
-header nav a:hover {
-  color: #ffc800;
+@media screen and (max-width: 767px) {
+  header {
+    padding: 60px 0 150px;
+    background-image: url("Assets/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  header .container {
+    display: flex;
+    flex-wrap: inherit;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .navbar {
+    padding: 16px 0;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+  }
+  header .headertext h2 {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  header .headertext h1 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 52px;
+    margin-top: 10px;
+    letter-spacing: 5px;
+  }
+  header .headtext {
+    position: relative;
+    top: 90px;
+  }
+  header .btn a {
+    border: 1px solid #ffc800;
+    border-radius: 5px;
+    color: #ffffff;
+    background: #ffc800;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    padding: 20px 40px;
+  }
+  header .btn a:hover {
+    background-color: #d9aa00;
+  }
 }/*# sourceMappingURL=style.css.map */
