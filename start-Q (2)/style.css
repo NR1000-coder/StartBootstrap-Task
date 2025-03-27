@@ -214,4 +214,21 @@ header {
   header .btn a:hover {
     background-color: #d9aa00;
   }
+}
+#services {
+  padding: 96px 0;
+}
+#services h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 16px;
+  letter-spacing: 3px;
+}
+#services h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #6c757d;
+  margin-bottom: 64px;
+  letter-spacing: 1px;
 }/*# sourceMappingURL=style.css.map */
