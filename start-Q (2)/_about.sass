@@ -1,2 +1,143 @@
 #about
-    
+    padding: 96px 0
+    h2
+        font-size: 40px
+        font-weight: 700
+        color: #212529
+        margin-bottom: 16px
+        letter-spacing: 3px
+    h3
+        font-size: 16px
+        font-weight: 400
+        color: #6c757d
+        margin-bottom: 64px
+        letter-spacing: 1px
+    ul
+        li
+            margin-bottom: 100px
+            .box
+                display: flex
+                .textbox
+                    h4
+                        font-size: 24px
+                        font-weight: 700
+                        color: #212529
+                        margin-bottom: 8px
+                    p
+                        font-size: 18px
+                        color: #6c757d
+                        margin-bottom: 8px
+                        line-height: 1.4
+                .imgbox
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    border: 10px solid #e9ecef
+                    height: 170px
+                    width: 170px
+                    border-radius: 100%
+                    img
+                        border-radius: 100%
+                        height: 156px
+                        width: 156px
+                .yellow
+                    display: flex
+                    text-align: center
+                    align-items: center
+                    background-color: #ffc800
+                    h5
+                        color: #ffffff
+                        font-size: 20px
+                        font-weight: 700
+                        padding: 0 40px
+
+            .left
+                .textbox
+                    text-align: end
+                    padding: 0 20px 20px 100px
+                .imgbox
+                    margin-right: 600px
+            .right
+                .textbox
+                    text-align: start
+                    padding: 0 100px 20px 20px
+                .imgbox
+                    margin-left: 530px
+
+    @media screen and (max-width: 1399px)
+        ul
+            li
+                .left
+                    .imgbox
+                        margin-right: 480px
+                .right
+                    .imgbox
+                        margin-left: 470px
+
+    @media screen and (max-width: 1199px)
+        ul
+            li
+                .box
+                    .imgbox
+                        height: 150px
+                        width: 150px
+                        img
+                            height: 136px
+                            width: 136px
+                    .yellow
+                        h5
+                            padding: 0 30px
+                .left
+                    .textbox
+                        padding: 0 20px 20px
+                    .imgbox
+                        margin-right: 400px
+                .right
+                    .textbox
+                        padding: 0 20px 20px
+                    .imgbox
+                        margin-left: 400px
+
+    @media screen and (max-width: 991px)
+        ul
+            li
+                .box
+                    .imgbox
+                        height: 100px
+                        width: 100px
+                        img
+                            height: 86px
+                            width: 86px
+                    .yellow
+                        h5
+                            font-size: 16px
+                            padding: 0 15px
+                .left
+                    .textbox
+                        padding: 0 20px 20px 30px
+                    .imgbox
+                        margin-right: 280px
+                .right
+                    .textbox
+                        padding: 0 30px 20px 20px
+                    .imgbox
+                        margin-left: 280px
+    @media screen and (max-width: 767px)
+        ul
+            li
+                .box
+                    .textbox
+                        padding: 0 20px 0 110px
+                        text-align: start
+                    .imgbox
+                        height: 80px
+                        width: 80px
+                        position: absolute
+                        margin-left: 0
+                        img
+                            height: 66px
+                            width: 66px
+                    .yellow
+                        h5 
+                            font-size: 14px
+                            padding: 0 10px
