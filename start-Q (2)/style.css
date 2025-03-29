@@ -15,33 +15,22 @@ a:hover {
 }
 
 header {
-  padding: 15px 0 400px 0;
-  background-image: url("Assets/header-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  padding: 18px 0;
+  background-color: #212529;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
 }
-
 @media screen and (min-width: 992px) {
-  header .navbar .imgbox img {
-    height: 32px;
-    width: 180px;
-  }
-  header .navbar nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-  }
-  header .navbar nav ul li {
-    margin-right: 10px;
-  }
-  header .navbar nav ul li a {
+  header .navbar nav a {
     font-size: 18px;
     color: #ffffff;
     margin-right: 30px;
   }
-  header .navbar nav ul li a:hover {
+  header .navbar nav a:hover {
     color: #ffc800;
   }
   header .navbar .menubox {
@@ -50,63 +39,17 @@ header {
   header .navbar .menubox h6, header .navbar .menubox i {
     display: none;
   }
-  header .headertext {
-    display: inline;
-  }
-  header .headertext h1 {
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 72px;
-    margin-bottom: 64px;
-    letter-spacing: 8px;
-  }
-  header .headertext h2 {
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 36px;
-    margin-bottom: 32px;
-  }
-  header .btn {
-    margin-top: 30px;
-  }
-  header .btn a {
-    border: 1px solid #ffc800;
-    border-radius: 5px;
-    color: #ffffff;
-    background: #ffc800;
-    font-size: 22px;
-    font-weight: 700;
-    padding: 20px 50px;
-  }
-  header .btn a:hover {
-    background-color: #d9aa00;
-  }
-  header .headtext {
-    position: relative;
-    top: 200px;
+  header .imgbox img {
+    height: 32px;
+    width: 187px;
   }
 }
 @media screen and (max-width: 991px) {
-  header {
-    padding: 200px 0 300px 0;
-    background-image: url("Assets/header-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-  header .navbar {
-    background: #212529;
-    position: fixed;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    padding: 10px 70px;
-  }
   header .navbar .imgbox img {
-    height: 32px;
-    width: 180px;
+    height: 24px;
+    width: 140px;
   }
-  header .navbar nav ul li a {
+  header .navbar nav a {
     display: none;
   }
   header .navbar .menubox {
@@ -129,23 +72,73 @@ header {
     font-size: 12px;
     color: #979397;
   }
-  header .headertext h1 {
+}
+@media screen and (max-width: 575px) {
+  header .navbar {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+#welcome {
+  padding: 15px 0 480px 0;
+  background-image: url("Assets/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+@media screen and (min-width: 992px) {
+  #welcome .wlcmtext {
+    display: inline;
+  }
+  #welcome .wlcmtext h1 {
     color: #ffffff;
     font-weight: 700;
     font-size: 72px;
     margin-bottom: 64px;
     letter-spacing: 8px;
   }
-  header .headertext h2 {
+  #welcome .wlcmtext h2 {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  #welcome .btn a {
+    border: 1px solid #ffc800;
+    border-radius: 5px;
+    color: #ffffff;
+    background: #ffc800;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 20px 50px;
+  }
+  #welcome .btn a:hover {
+    background-color: #d9aa00;
+  }
+  #welcome .row {
+    position: relative;
+    top: 270px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #welcome .wlcmtext h1 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 72px;
+    margin-bottom: 64px;
+    letter-spacing: 8px;
+  }
+  #welcome .wlcmtext h2 {
     color: #ffffff;
     font-weight: 500;
     font-size: 36px;
     margin-bottom: 32px;
   }
-  header .btn {
+  #welcome .btn {
     margin-top: 20px;
   }
-  header .btn a {
+  #welcome .btn a {
     border: 1px solid #ffc800;
     border-radius: 5px;
     color: #ffffff;
@@ -155,53 +148,47 @@ header {
     font-weight: 700;
     padding: 20px 40px;
   }
-  header .btn a:hover {
+  #welcome .btn a:hover {
     background-color: #d9aa00;
   }
-  header .headtext {
+  #welcome .row {
     position: relative;
-    top: 80px;
+    top: 260px;
   }
 }
 @media screen and (max-width: 767px) {
-  header {
-    padding: 60px 0 150px;
+  #welcome {
+    padding: 213px 0 100px;
     background-image: url("Assets/header-bg.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
   }
-  header .container {
+  #welcome .container {
     display: flex;
     flex-wrap: inherit;
     justify-content: space-between;
     align-items: center;
   }
-  header .navbar {
-    padding: 16px 0;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-  }
-  header .headertext h2 {
+  #welcome .wlcmtext h2 {
     color: #ffffff;
     font-weight: 500;
     font-size: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
-  header .headertext h1 {
+  #welcome .wlcmtext h1 {
     color: #ffffff;
     font-weight: 700;
     font-size: 52px;
     margin-top: 10px;
     letter-spacing: 5px;
+    margin-bottom: 15px;
   }
-  header .headtext {
+  #welcome .row {
     position: relative;
-    top: 90px;
+    top: -35px;
   }
-  header .btn a {
+  #welcome .btn a {
     border: 1px solid #ffc800;
     border-radius: 5px;
     color: #ffffff;
@@ -211,21 +198,31 @@ header {
     font-weight: 700;
     padding: 20px 40px;
   }
-  header .btn a:hover {
+  #welcome .btn a:hover {
     background-color: #d9aa00;
   }
 }
+@media screen and (max-width: 280px) {
+  #welcome .btn {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #welcome .btn a {
+    letter-spacing: 0;
+  }
+}
+
 #services {
   padding: 96px 0;
 }
-#services h1 {
+#services h2 {
   font-size: 32px;
   font-weight: 700;
   color: #212529;
   margin-bottom: 16px;
   letter-spacing: 3px;
 }
-#services h4 {
+#services h3 {
   font-size: 16px;
   font-weight: 400;
   color: #6c757d;
