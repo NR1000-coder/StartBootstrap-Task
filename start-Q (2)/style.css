@@ -24,6 +24,12 @@ header {
   z-index: 1;
   width: 100%;
 }
+header .imgbox img {
+  cursor: pointer;
+}
+header nav a {
+  cursor: pointer;
+}
 @media screen and (min-width: 992px) {
   header .navbar nav a {
     font-size: 18px;
@@ -93,6 +99,7 @@ header {
   color: #ffffff;
   font-weight: 700;
   background: #ffc800;
+  cursor: pointer;
 }
 #welcome .btn a:hover {
   background-color: #d9aa00;
@@ -283,6 +290,7 @@ header {
 #portfolio .box .imgbox .icon:hover {
   background-color: rgba(255, 200, 0, 0.9019607843);
   opacity: 90%;
+  cursor: pointer;
 }
 @media screen and (max-width: 991px) {
   #portfolio .box .imgbox {
@@ -626,5 +634,53 @@ header {
 @media screen and (max-width: 767px) {
   #contactus .box, #contactus .bigbox {
     width: 516px;
+  }
+}
+
+footer {
+  padding: 24px;
+}
+footer .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .box ul {
+  display: flex;
+  justify-content: center;
+}
+footer .box ul li .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 0 8px;
+  background-color: #212529;
+}
+footer .box ul li .icon i {
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+footer .text {
+  display: flex;
+  justify-content: between;
+}
+footer .text h4 {
+  margin-right: 20px;
+}
+@media screen and (max-width: 991px) {
+  footer .box {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  footer .box ul, footer .box h4 {
+    margin: 20px 0;
+  }
+  footer .text h4 {
+    margin-right: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

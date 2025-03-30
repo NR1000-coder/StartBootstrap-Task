@@ -1,0 +1,38 @@
+footer
+    padding: 24px
+    .box
+        display: flex
+        justify-content: space-between
+        align-items: center
+        ul
+            display: flex
+            justify-content: center
+            li
+                .icon
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    height: 40px
+                    width: 40px
+                    border-radius: 50%
+                    margin: 0 8px
+                    background-color: #212529
+                    i
+                        font-size: 20px
+                        color: #ffffff
+                        text-align: center
+    .text
+        display: flex
+        justify-content: between
+        h4
+            margin-right: 20px
+    @media screen and (max-width: 991px)
+        .box
+            display: flex
+            text-align: center
+            flex-direction: column
+            ul, h4
+                margin: 20px 0
+        .text
+            h4
+                margin-right: 20px
