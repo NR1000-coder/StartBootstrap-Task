@@ -335,10 +335,10 @@ header {
   border: 10px solid #e9ecef;
   height: 170px;
   width: 170px;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 #about ul li .box .imgbox img {
-  border-radius: 100%;
+  border-radius: 50%;
   height: 156px;
   width: 156px;
 }
@@ -445,5 +445,186 @@ header {
   #about ul li .box .yellow h5 {
     font-size: 14px;
     padding: 0 10px;
+  }
+}
+
+#team {
+  background-color: #f8f9fa;
+  padding: 96px 0;
+}
+#team h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 16px;
+  letter-spacing: 3px;
+}
+#team h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #6c757d;
+  margin-bottom: 64px;
+  letter-spacing: 1px;
+}
+#team .box {
+  margin-bottom: 48px;
+}
+#team .box .imgbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid #dfe0e1;
+  height: 238px;
+  width: 238px;
+  border-radius: 50%;
+}
+#team .box .imgbox img {
+  border-radius: 50%;
+  height: 224px;
+  width: 224px;
+}
+#team .box .textbox {
+  text-align: center;
+}
+#team .box .textbox h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #212529;
+  margin-top: 24px;
+}
+#team .box .textbox p {
+  font-size: 18px;
+  color: #6c757d;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+#team ul {
+  display: flex;
+  justify-content: center;
+}
+#team ul li .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 0 8px;
+  background-color: #212529;
+}
+#team ul li .icon i {
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+@media screen and (max-width: 991px) {
+  #team .row {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+#company {
+  padding: 48px 0;
+}
+#company .box .imgbox {
+  margin: 16px 0;
+  padding: 0 12px;
+}
+#company .box .microsoft {
+  width: 200px;
+}
+#company .box .google {
+  width: 118px;
+}
+#company .box .facebook {
+  width: 164px;
+}
+#company .box .ibm {
+  width: 110px;
+}
+
+#contactus {
+  padding: 96px 0;
+  background-image: url(Assets/map-image.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #212529;
+}
+#contactus .textbox h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 16px;
+  letter-spacing: 3px;
+}
+#contactus .textbox h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #6c757d;
+  margin-bottom: 64px;
+  letter-spacing: 1px;
+}
+#contactus .box {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  height: 66px;
+  width: 636px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+#contactus h5 {
+  color: #ced4df;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px;
+}
+#contactus .bigbox {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 5px;
+  height: 238px;
+  width: 636px;
+}
+#contactus .btnbox {
+  display: flex;
+  justify-content: center;
+}
+#contactus .btnbox .btn {
+  border: 1px solid #b28f0e;
+  background-color: #b28f0e;
+  opacity: 70%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 69px;
+  width: 250px;
+  margin: 40px 0;
+}
+#contactus .btnbox .btn h6 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+}
+@media screen and (max-width: 1399px) {
+  #contactus .box, #contactus .bigbox {
+    width: 546px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  #contactus .box, #contactus .bigbox {
+    width: 456px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #contactus .box, #contactus .bigbox {
+    width: 336px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #contactus .box, #contactus .bigbox {
+    width: 516px;
   }
 }/*# sourceMappingURL=style.css.map */
