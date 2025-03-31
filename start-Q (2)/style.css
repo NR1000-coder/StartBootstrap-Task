@@ -520,13 +520,20 @@ header nav a {
   margin: 0 8px;
   background-color: #212529;
 }
+#team ul li .icon:hover {
+  cursor: pointer;
+  background-color: #424649;
+}
 #team ul li .icon i {
   font-size: 20px;
   color: #ffffff;
   text-align: center;
 }
+#team ul li .icon i:hover {
+  cursor: pointer;
+}
 @media screen and (max-width: 991px) {
-  #team .row {
+  #team .row-format {
     display: flex;
     flex-direction: row;
   }
@@ -538,6 +545,9 @@ header nav a {
 #company .box .imgbox {
   margin: 16px 0;
   padding: 0 12px;
+}
+#company .box .imgbox img:hover {
+  cursor: pointer;
 }
 #company .box .microsoft {
   width: 200px;
@@ -555,7 +565,6 @@ header nav a {
 #contactus {
   padding: 96px 0;
   background-image: url(Assets/map-image.png);
-  background-repeat: no-repeat;
   background-position: center center;
   background-color: #212529;
 }
@@ -582,11 +591,17 @@ header nav a {
   margin-bottom: 20px;
   padding-left: 10px;
 }
+#contactus .box:hover {
+  cursor: text;
+}
 #contactus h5 {
   color: #ced4df;
   font-size: 20px;
   font-weight: 700;
   margin: 20px;
+}
+#contactus h5:hover {
+  cursor: text;
 }
 #contactus .bigbox {
   border: 1px solid #ffffff;
@@ -594,6 +609,9 @@ header nav a {
   border-radius: 5px;
   height: 238px;
   width: 636px;
+}
+#contactus .bigbox:hover {
+  cursor: text;
 }
 #contactus .btnbox {
   display: flex;
@@ -645,6 +663,9 @@ footer .box {
   justify-content: space-between;
   align-items: center;
 }
+footer .box h4:hover {
+  cursor: text;
+}
 footer .box ul {
   display: flex;
   justify-content: center;
@@ -659,10 +680,17 @@ footer .box ul li .icon {
   margin: 0 8px;
   background-color: #212529;
 }
+footer .box ul li .icon:hover {
+  cursor: pointer;
+  background-color: #424649;
+}
 footer .box ul li .icon i {
   font-size: 20px;
   color: #ffffff;
   text-align: center;
+}
+footer .box ul li .icon i:hover {
+  cursor: pointer;
 }
 footer .text {
   display: flex;
@@ -670,6 +698,9 @@ footer .text {
 }
 footer .text h4 {
   margin-right: 20px;
+}
+footer .text h4:hover {
+  cursor: pointer;
 }
 @media screen and (max-width: 991px) {
   footer .box {

@@ -4,6 +4,10 @@ footer
         display: flex
         justify-content: space-between
         align-items: center
+        h4
+            &:hover
+                cursor: text
+
         ul
             display: flex
             justify-content: center
@@ -17,15 +21,22 @@ footer
                     border-radius: 50%
                     margin: 0 8px
                     background-color: #212529
+                    &:hover
+                        cursor: pointer
+                        background-color: #424649
                     i
                         font-size: 20px
                         color: #ffffff
                         text-align: center
+                        &:hover
+                            cursor: pointer
     .text
         display: flex
         justify-content: between
         h4
             margin-right: 20px
+            &:hover
+                cursor: pointer
     @media screen and (max-width: 991px)
         .box
             display: flex

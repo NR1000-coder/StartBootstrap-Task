@@ -1,7 +1,6 @@
 #contactus
     padding: 96px 0
     background-image: url(Assets/map-image.png)
-    background-repeat: no-repeat
     background-position: center center
     background-color: #212529
     .textbox
@@ -25,17 +24,23 @@
         background-color: #ffffff
         margin-bottom: 20px
         padding-left: 10px
+        &:hover
+            cursor: text
     h5
         color: #ced4df
         font-size: 20px
         font-weight: 700
         margin: 20px
+        &:hover
+            cursor: text
     .bigbox
         border: 1px solid #ffffff
         background-color: #ffffff
         border-radius: 5px
         height: 238px
         width: 636px
+        &:hover
+            cursor: text
     .btnbox
         display: flex
         justify-content: center
@@ -50,7 +55,7 @@
             height: 69px
             width: 250px
             margin: 40px 0
-            h6 
+            h6
                 color: #ffffff
                 font-size: 20px
                 font-weight: 600
@@ -67,4 +72,3 @@
     @media screen and (max-width: 767px)
         .box, .bigbox
             width: 516px
-    
